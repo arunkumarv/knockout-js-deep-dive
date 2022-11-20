@@ -4,7 +4,15 @@
         <script type="text/javascript" data-main="scripts/init.js" src="scripts/require.js"></script>
     </head>
     <body>
-        <p>First name: <input data-bind="value: firstName" /></p>
-        <p>First name capitalized: <strong data-bind="text: firstNameCaps"></strong></p>
+        <div id="app">
+            <h2>app</h2>
+            <p>First name: <input data-bind="value: firstName" /></p>
+            <p>First name capitalized: <strong data-bind="text: firstNameCaps"></strong></p>
+        </div>
+
+        <div id="sidebar">
+            <h2>sidebar</h2>
+            <message-editor params='initialText: "Hello, world!"'></message-editor>
+        </div>
     </body>
 </html>
